@@ -1,0 +1,459 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2b2b2b;
+}
+
+.div-1 {
+  background-color: #2b2b2b;
+  width: 100%;
+  height: 70px;
+}
+
+.ul-1 {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align items berguna untuk memberi tahu letak kotaknya */
+  gap: 40px;
+  /* kasih jarak antar menu */
+}
+
+.li-1 {
+  list-style-type: none;
+  padding: 15px;
+  margin: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+.li-1:hover {
+  /* hover memberikan umpan balik kepada user, apabila user mengarahkan konsolnya ke arah tersebut */
+  background-color: chocolate;
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.3s;
+  border-radius: 9px;
+}
+
+.a-1 {
+  color: #ffb800;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.a-1:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.div-2 {
+  color: #f8f8ff;
+  background-color: #222;
+  display: flex;
+  flex-direction: row;
+  /*agar foto dan teks bersebelahan*/
+  justify-content: center;
+  /* flex start agar teksnya naik */
+  align-items: flex-start;
+  min-height: 74vh;
+  gap: 80px;
+  padding-top: 170px;
+  /* padding top ngatur jarak teks dari atas */
+  padding-right: 1%;
+  /* agar teks jaraknya menjauh dari kanan */
+  padding-left: 1%;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  /* agar h1 dan p tersusun atas bawah */
+  padding-top: 80px;
+}
+
+.paragraf-1{
+  color: #ccc;
+  font-size: 20px;
+}
+
+.button-1{
+  background-color: #2b2b2b;
+  color: goldenrod;
+  border: 2px solid gold;
+  border-radius: 30px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 180px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button-1:hover{
+  color: #222;
+  background-color: #ffb800;
+  border: 2px solid #222;
+  transition: ease-in-out;
+  transform: scale(106%);
+  transition: transform 0.1s ease;
+  transition-delay: 0.2s;
+}
+
+.highlights {
+  color: gold;
+  border-bottom: 2px solid gold;
+  border-bottom: none;
+  /* menghilangkan garis border */
+}
+
+.hero-image {
+  width: 200px;
+  height: 230px;
+  border: 3px solid gold;
+  border-radius: 11px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.foto-profil{
+  border-radius: 10px;
+  object-fit: cover;
+  /* biar ga penyet dan tumpul */
+}
+
+.hero-image:hover{
+  transform: translate(-10px);
+  filter: brightness(1.1);
+  box-shadow: 0px 10px 20px rgba(212, 175, 55, 0.4) ;
+}
+
+.a-content {
+  width: 720px;
+  height: 480px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-content:hover {
+  color: #ffb800;
+  transition: 0.3s ease-in-out;
+}
+
+.div-3 {
+  background-color: #2b2b2b;
+  height: 500px;
+}
+
+/* --- BAGIAN FOOTER --- */
+
+/* Ini 'Wadah Utama' yang membuat group-left dan group-right bersampingan */
+.link-sosial {
+  display: flex;             /* Mengaktifkan mode bersampingan */
+  justify-content: flex-end; /* Membuat semuanya berdempetan di sebelah kanan */
+  gap: 40px;                 /* Jarak antar dua kelompok (atur sesuai selera) */
+  padding-right: 4%;         /* Agar tidak terlalu mepet tembok kanan layar */
+  margin-top: 20px;
+}
+
+/* Mengatur agar link di dalam grup tetap tersusun ke bawah */
+.group-left, .group-right {
+  display: flex;
+  flex-direction: column;    /* Menyusun teks ke bawah */
+  gap: 5px;                  /* Jarak antar baris teks */
+}
+
+/* HAPUS margin-left besar pada class di bawah ini di file CSS kamu */
+.social-footer, .social-footer-2, .a-link, .a-link-2 {
+  margin-left: 0 !important; /* Kita tidak butuh margin-left manual lagi */
+  width: auto;               /* Biarkan ukurannya pas dengan teks */
+  height: auto;              /* Biarkan tingginya otomatis */
+  display: block;            /* Mengembalikan sifat dasar teks */
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.social-footer, .social-footer-2{
+  color: #ccc;
+  font-size: 14px;
+}
+
+.a-link, .a-link-2{
+  color: #ffb800;
+  text-decoration: none;
+}
+
+.a-link:hover,
+.a-link-2:hover{
+  color: #f8f8ff;
+  transition: ease-in;
+  transition-delay: 0.2s;
+}
+
+.hero-section{
+  border: 1px solid #ccc;
+  width: 93%;
+  margin-left: 3%;
+  margin-top: 6%;
+}
+
+.footer-content, .footer-content-2{
+  margin-top: 8px;
+  margin-left: 38px;
+  color: #ccc;
+}
+
+.footer-content-2{
+  margin-left: 70%;
+}
+
+.text-big{
+  font-size: 22vh;
+  margin-left: 78px;
+  font-weight: 50%;
+  color: #FF8C00;
+}
+
+.footer-content-3{
+  margin-left: 38px;
+  color: #ccc;
+}
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* -------------------PUNYA ABOUT ME-------------------- */
+.div-aboutme-2{
+  background-color: #222;
+  color: #ffb800;
+  min-height: 100vh;
+}
+
+.h1-aboutme-2 {
+  background-color: #222;
+  text-align: center;
+  padding: 30px 0;
+  margin : 0;
+  padding-top: 30px;
+}
+
+#profil-1{
+  display: flex;
+  background-color: #222;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 68px;
+}
+
+#profil-1 img{
+  margin-top: 44px;
+  margin-left: 42px;
+  object-fit: cover;
+}
+
+.foto-profil-2{
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  border: 2px solid #ffb800;
+}
+
+.profil-2{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 30px;
+  background-color: #222;
+}
+
+.profil-2 h4{
+  color: #ccc;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.profil-2 p{
+  margin-bottom: 1.2px;
+  line-height: 1.2;
+}
+
+.profil-3{
+  background-color: #222;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.profil-3 h4{
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.profil-3 li *:not(small){
+  list-style-type: square;
+  background-color: #222;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* ----------PUNYAA PROJECT--------------------- */
+.div-project-3{
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffb800;
+  min-height: 100vh;
+}
+
+.content-project{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 240px;
+  background-color: #FFB800;
+  color: #222;
+  width: 64.5%;
+  height: 100px;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  gap: 120px;
+}
+
+.list-project{
+  margin-right: 90px;
+}
+
+.list-project li{
+  margin-top: 15px;
+}
+
+.list-project p{
+  margin-bottom: 5px;
+}
+
+.a-project{
+  display: inline-block;
+  text-decoration: none;
+  color: #FFB800;
+  background-color: #222;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 2px solid #3d3d3d;
+}
+
+.a-project:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.list-project h4{
+  margin-bottom: 3px;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------PUNYA CONTACT_--------------------- */
+.div-contact-4{
+  background-color: #222;
+  color: #ffb800;
+  min-height: 100vh;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-left: 15%;
+    height: 160px;
+    width: 68%;
+}
+
+.form-side {
+    flex: 1.2; /* Form lebih lebar */
+    text-align: left;
+    background-color: #ffb800;
+    text-align: center;
+    border-radius: 200px;
+    border: 2px solid yellow;
+}
+
+.form-side h3{
+  color: #222;
+}
+
+.input-box{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.info-side {
+    flex: 1; /* Bagian sosmed lebih ramping */
+    margin-left: 70px;
+    border-left: 2px dashed #FFB800; /* Garis putus-putus seperti gambar kamu */
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #222;
+    padding-left: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.a-info-item{
+  color: #FFB800;
+  text-decoration: none;
+}
+
+.a-info-item:hover{
+  color: #ccc;
+  transition: ease-in;
+  transition-delay: 0.2s;
+}
+
+.info-item img {
+    width: 35px;
+    filter: drop-shadow(0 0 5px #FFB800);
+    border-radius: 7.5px;
+}
+
+.text-contact{
+  text-align: center;
+  background-color: #222;
+  padding: 30px 0;
+  margin : 0;
+  padding-top: 30px;
+}
+
+.text-contact-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-contact-2 ul,li{
+  list-style-type: none;
+}
