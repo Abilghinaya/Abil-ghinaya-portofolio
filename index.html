@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head berguna untuk luaran tampilan web (bagian atas biasanya) -->
+    <meta charset="UTF-8"> 
+    <title>Abil's Portofolio</title>
+    <meta name="description" content="Welcome to my digital space. I'm a beginner web developer enthusiast showcasing my coding journey and creative project's. Don't forget to keep following my development in the world of coding, Only here!.">
+    <link rel="stylesheet" href="ujicoba.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Abil ghinaya - Web Developer Journey">
+    <meta property="og:description" content="Hello! Welcome to my digital space. I'm Abil ghinaya, an informatics student with a strong passion for web development and problem-solving. Explore my latest coding projects and tech journey here.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+  </head>
+  <body>
+    <!-- NAVIGASI BAR -->
+    <div class="div-1">
+      <!-- div berguna untuk membungkus semua biar ga ribet (pengelompokan)-->
+      <ul class="ul-1">
+        <!-- ul berguna untuk membungkus seluruh daftar list -->
+        <div class="left-navbar">
+        <li>
+          <img src="caroline-removebg-preview.png" class="icon">
+        </li>
+        </div>
+
+        <button class="hamburger" id="hamburger-btn">
+            <i class="ph ph-list"></i> </button>
+
+        <div id="navbar-menu" class="right-navbar">
+        <li class="li-1">
+          <a href="#" class="a-1">GHINAYA.DEV</a>
+          <!-- a berfungsi agar teks atau gambar bisa diklik dan berpindah ke halaman lain -->
+        </li>
+        <!-- li berguna untuk menjadi isi dari daftar tersebut (li harus selalu berada didalam ul) -->
+        <li class="li-1">
+          <a href="aboutme.html" class="a-1">ABOUT ME</a>
+        </li>
+
+        <li class="li-1">
+          <a href="projects.html" class="a-1">PROJECTS</a>
+        </li>
+
+        <li class="li-1">
+          <a href="contactme.html" class="a-1">CONTACT</a>
+        </li>
+        </div> 
+      </ul>
+      <script src="script.js"></script>
+    </div>
+    <!-- NAVIGASI BAR END -->
+
+    <!-- CONTENT -->
+    <div class="div-2">
+      <h1 class="key-highlights">One More&nbsp;<span class="highlights"> Abil</span></h1>
+      <!-- &nbsp memberikan spasi -->
+        <section id= "content-home">
+        <div class="text-content">
+        <!-- widht untuk panjang dan height untuk lebar -->
+        <!-- span sama sama pembungkus -->
+          <P>Abil is a 19-years-old a beginner developer. He is also-<br>
+          a dedicated undergraduate student majoring in computer science.<br>
+          As a beginner developer, he is currently immersing himslef in-<br>
+          the fundamentals of software development and building a solid-<br>
+          foundation in web technologies.</P>
+          <br>
+          <p>He believes that every bug fixed is a step closer to mastery and<br>
+          is constantly seeking opportunities to grow through hands-on projects.</p>
+          <br>
+          <p>Best regards, and maybe you can see my several projects below.</p>
+            <a href="projects.html" class="button-1">Explore Projects</a>
+        </div>
+
+        <div class="hero-image">
+        <img
+          src="WhatsApp Image 2026-05-24 at 2.13.59 PM.jpeg"
+          alt="Foto profil Abil Ghinaya Azka"
+        class="foto-profil"/>
+        </div>
+        </section>
+
+        <div class="father-card-img">
+              <img src="images.jpg" class="img-child">
+
+              <img src="images (1).jpg" class="img-child">
+
+              <img src="images (2).jpg" class="img-child">
+
+              <img src="images (3).jpg" class="img-child">
+        </div>
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER -->
+    <div class="div-3">
+      <div class="link-sosial">
+        <div class="group-left">
+          <p class="social-footer">Quick Links</p>
+          <a href="aboutme.html" class="a-link">About me</a>
+          <a href="projects.html" class="a-link">Projects</a>
+          <a href="contactme.html" class="a-link">Contact</a>
+        </div>
+
+      <div class="group-right">
+          <p class="social-footer-2">Find me here!</p>
+          <a href="https://github.com/Abilghinaya" class="a-link-2" target="_blank" rel="noopener noreferrer">root@projects</a>
+          <a href="https://www.linkedin.com/in/Abil Ghinaya/." class="a-link-2" target="_blank" rel="noopener noreferrer">career.sh</a>
+          <a href="https://instagram.com/Axzzkabiel_" class="a-link-2" target="_blank" rel="noopener noreferrer">human_interface.gui</a>
+      </div>
+    
+      </div> <hr class="hero-section">
+        <div class="container-footer">
+          <p class="footer-content">&copy; 2026 Abil Ghinaya Azka</p>
+          <p class="footer-content-2">Based in Tegal, Indonesia</p>
+        </div>
+          <h1 class="text-big">ThaT's aLL, FoLks!</h1>
+          <p class="footer-content-3">Running on: HTML/CSS --env production</p>
+    </div>
+    <!-- FOOTER END -->
+     <!-- Taruh kode ini tepat di atas tag penutup </body> -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const rightNavbar = document.getElementById('navbar-menu');
+
+      // 1. Logika lama: Buka-tutup menu pas hamburger diklik
+      hamburgerBtn.addEventListener('click', function(e) {
+        rightNavbar.classList.toggle('active');
+        // StopPropagation penting agar klik di tombol ini tidak dianggap sebagai "klik di luar"
+        e.stopPropagation(); 
+      });
+
+      // 2. Logika BARU: Pas layar bagian mana saja diklik, menu bakal mengecek
+      document.addEventListener('click', function(e) {
+        // Jika menu sedang terbuka AND yang diklik BUKAN area menu AND bukan tombol hamburger
+        if (rightNavbar.classList.contains('active') && 
+            !rightNavbar.contains(e.target) && 
+            !hamburgerBtn.contains(e.target)) {
+          
+          rightNavbar.classList.remove('active'); // Otomatis tutup menu
+          console.log("Klik di luar detected, menu ditutup!");
+        }
+      });
+    </script>
+  </body>
+</html>
